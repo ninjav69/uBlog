@@ -28,7 +28,7 @@
 		</h2>
 
 		<p class="justify">
-			${blogPostInstance.content}
+			${raw(blogPostInstance.content)}
 		</p>
 
 	</section>

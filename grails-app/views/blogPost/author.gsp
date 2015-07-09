@@ -145,18 +145,19 @@
 
 		<!-- Post Start -->
 		<div class="10u post author">
-		<g:form url="[resource:entryInstance, action:'save']">
+		<g:form url="[resource:blogPostInstance, action:'save']">
 			<fieldset class="form">
-				<div class="fieldcontain ${hasErrors(bean: entryInstance, field: 'title', 'error')} required">
+				<div class="fieldcontain ${hasErrors(bean: blogPostInstance, field: 'title', 'error')} required">
 					<label for="title">
-						<g:message code="entry.title.label" default="Title" />
+						<g:message code="blogPost.title.label" default="Title" />
 						<span class="required-indicator">*</span>
 					</label>
-					<g:textField name="title" required="" value="${entryInstance?.title}"/>
+					<g:textField name="title" required="" value="${blogPostInstance?.title}"/>
 				</div>
 
 				<div class="fieldcontain">
-					<ckeditor:editor name="myeditor" height="400px" width="99%">
+					<ckeditor:editor name="content" height="400px" width="99%">
+					${blogPostInstance?.content}
 					</ckeditor:editor>
 				</div>				
 			</fieldset>
