@@ -25,7 +25,7 @@
 
 			<!-- Create button is only applicable to create action -->
 			<fieldset class="buttons">
-				<g:submitButton name="create" class="save"
+				<g:submitButton name="create" class="save button"
 					value="${message(code: 'default.button.create.label', default: 'Create')}" />
 			</fieldset>
 		</g:form>

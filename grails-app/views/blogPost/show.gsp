@@ -11,13 +11,16 @@
 		<div class="previous">
 			<g:link action="index">Back to blog list</g:link>
 		</div>
-		<div class="edit">
-			<g:link action="edit" resource="${blogPostInstance}">Edit this post</g:link>
-		</div>
 		
-		<div class="delete">
-			<g:link action="delete" resource="${blogPostInstance}">Delete this post</g:link>
-		</div>
+		<sec:ifLoggedIn>
+			<div class="edit">
+				<g:link action="edit" resource="${blogPostInstance}">Edit this post</g:link>
+			</div>
+		
+			<div class="delete">
+				<g:link action="delete" resource="${blogPostInstance}">Delete this post</g:link>
+			</div>
+		</sec:ifLoggedIn>
 
 	</div>
 	<div class="1u"></div>

@@ -64,6 +64,7 @@ grails.project.dependency.resolution = {
 		compile ":jasper:1.11.0"
 		compile ":quartz:1.0.2"
 		compile ":ckeditor:4.4.1.0"
+		compile ':spring-security-core:2.0-RC5'
 		
         // plugins needed at runtime but not for compilation
         runtime ":hibernate4:4.3.8.1" // or ":hibernate:3.6.10.18"

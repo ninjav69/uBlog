@@ -115,3 +115,26 @@ log4j.main = {
            'org.hibernate',
            'net.sf.ehcache.hibernate'
 }
+
+
+// Added by the Spring Security Core plugin:
+grails.plugin.springsecurity.userLookup.userDomainClassName = 'org.ninjav.ublog.auth.User'
+grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'org.ninjav.ublog.auth.UserRole'
+grails.plugin.springsecurity.authority.className = 'org.ninjav.ublog.auth.Role'
+grails.plugin.springsecurity.controllerAnnotations.staticRules = [
+	'/':                ['permitAll'],
+	'/index':           ['permitAll'],
+	'/index.gsp':       ['permitAll'],
+	'/assets/**':       ['permitAll'],
+	'/**/js/**':        ['permitAll'],
+	'/**/css/**':       ['permitAll'],
+	'/**/images/**':    ['permitAll'],
+	'/**/favicon.ico':  ['permitAll'],
+	'/dbconsole/**':  	['permitAll'],
+	'/blogPost/**':		['IS_AUTHENTICATED_FULLY'],
+	'/blogPost/index':	['permitAll'],
+	'/blogPost/show/**':['permitAll']
+
+]
+grails.plugin.springsecurity.successHandler.alwaysUseDefault = true
+grails.plugin.springsecurity.successHandler.defaultTargetUrl = '/blogPost'

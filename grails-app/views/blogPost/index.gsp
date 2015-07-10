@@ -112,9 +112,12 @@
 	<div class="1u-first"></div>
 	<div class="10u navigation">
 
-		<div class="command">
-			<g:link action="create">Author new article</g:link>
-		</div>
+		<sec:ifLoggedIn>
+			<div class="command">
+				<g:link action="create">Author new article</g:link>
+			</div>
+		</sec:ifLoggedIn>
+
 	</div>
 	<div class="1u"></div>
 
@@ -123,6 +126,7 @@
 			var="blogPostInstance"></g:render>
 	</g:each>
 
+	<!-- 
 	<div class="1u-first"></div>
 	<div class="10u navigation">
 
@@ -135,5 +139,6 @@
 
 	</div>
 	<div class="1u"></div>
+	-->
 </body>
 </html>

@@ -25,7 +25,7 @@
 
 			<!-- Create button is only applicable to create action -->
 			<fieldset class="buttons">
-				<g:submitButton name="edit" class="edit"
+				<g:submitButton name="edit" class="edit button"
 					value="${message(code: 'default.button.edit.label', default: 'Edit')}" />
 			</fieldset>
 		</g:form>

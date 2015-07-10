@@ -33,25 +33,6 @@
 		</header>
 		<div class="1u"></div>
 		
-		<div class="1u-first"></div>
-		<div class="10u user">
-
-			<sec:ifLoggedIn>
-				<form name="logout" method="POST" action="${createLink(controller:'logout') }"> 
-					<input class="button" type="submit" value="logout">
-				</form>
-			</sec:ifLoggedIn>
-			
-			<sec:ifNotLoggedIn>
-				<form name="auth" method="POST" action="${createLink(controller:'auth') }"> 
-					<input class="button" type="submit" value="login">
-				</form>
-			</sec:ifNotLoggedIn>
-
-		</div>
-		<div class="1u"></div>
-
-
 		<g:layoutBody />
 		
 		<div class="1u-first"></div>
