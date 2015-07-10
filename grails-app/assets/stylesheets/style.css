@@ -107,9 +107,9 @@ header p {
 .post section {
 	padding: 0 40px 20px 100px;
 }
-
 .post img {
 	border-radius: 10px;
+	/*margin: 2em;*/
 }
 
 .post p {
@@ -162,6 +162,7 @@ header p {
 /*****************************************************************************/
 .navigation {
 	padding: 20px 0;
+	padding-bottom: 0;
 }
 
 .navigation a {
@@ -175,6 +176,35 @@ header p {
 	height: 21px;
 	background: url(/uBlog/assets/prev.png) no-repeat top left;
 	padding-left: 25px;
+}
+
+.navigation .command a {
+	float: left;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 1);
+	line-height: 21px;
+	height: 21px;
+	background: url(/uBlog/assets/author.png) no-repeat top left;
+	padding-left: 25px;
+}
+
+.navigation .edit a {
+	float: left;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 1);
+	line-height: 21px;
+	height: 21px;
+	background: url(/uBlog/assets/edit.png) no-repeat top left;
+	padding-left: 25px;
+	margin-left: 25px
+}
+
+.navigation .delete a {
+	float: left;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 1);
+	line-height: 21px;
+	height: 21px;
+	background: url(/uBlog/assets/delete.png) no-repeat top left;
+	padding-left: 25px;
+	margin-left: 25px
 }
 
 .navigation .next a {
@@ -324,6 +354,41 @@ footer li a {
 	color: #b1b1b1;
 }
 
+
+.author .form .fieldcontain {
+	margin: 1em 1em 0 1em;
+}
+
+.author .buttons {
+	padding: 1em;
+}
+
+.author {
+	margin: 2em;
+}
+
+.post .right {
+	float: right;
+	margin-left: 2em;
+	margin-bottom: 1em;
+}
+
+.post .left {
+	float: left;
+	margin-right: 2em;
+	margin-bottom: 1em;
+}
+
+section ul {
+	list-style-type: circle;
+	margin-left: 2em;
+	padding-bottom: 2em;
+}
+
+section em {
+	font-style: italic;		
+}
+
 /*********************************************************************************/
 /* 1200px (>= 1200px)                                                            */
 /*********************************************************************************/
@@ -359,13 +424,6 @@ footer li a {
 		bottom: -38px;
 	}
 
-	.author .form .fieldcontain{
-		padding: 1em 1em 0 1em;
-	}
-	
-	.author .buttons {
-		padding: 1em;
-	}
 }
 
 /*********************************************************************************/
@@ -399,9 +457,6 @@ footer li a {
 		bottom: -31px;
 	}
 	
-	.author {
-		padding: 2em;
-	}
 }
 
 /*********************************************************************************/
@@ -418,6 +473,7 @@ footer li a {
 		font-size: 24px;
 		padding-top: 50px;
 	}
+	
 	#slider {
 		width: 440px;
 	}
@@ -460,9 +516,5 @@ footer li a {
 	}
 	#slider .viewer .reel p {
 		display: none;
-	}
-
-	.author {
-		padding: 2em;
 	}
 }

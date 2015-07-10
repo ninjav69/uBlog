@@ -3,9 +3,9 @@ package org.ninjav.ublog
 class BlogPostController {
 	static scaffold = true
 
-	def latest = {
+	def index = {
 		[blogPostInstanceList: BlogPost.list()]
 	}
 	
-	def author = {}
+	def create = {}
 }
